@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact - Bright Future International School</title>
+	<style type="text/css">
+		* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #10233f;
+        }
+
+        header {
+            background-color: #061b38;
+            color: white;
+
+            min-height: 90px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 20px 55px;
+        }
+
+        .logo h2 {
+            color: white;
+        }
+
+        .logo p {
+            color: #fdbd12;
+        }
+
+        nav {
+            display: flex;
+            gap: 35px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #fdbd12;
+        }
+
+        .contact-hero {
+            background-color: #061b38;
+            color: white;
+
+            text-align: center;
+
+            padding: 70px 20px;
+        }
+
+        .contact-hero h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .contact-hero p {
+            color: #ddd;
+            font-size: 18px;
+        }
+
+        .contact-section {
+            max-width: 1100px;
+            margin: auto;
+
+            padding: 60px 30px;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1.5fr;
+
+            gap: 50px;
+        }
+
+        .contact-info h2 {
+            color: #061b38;
+
+            margin-bottom: 25px;
+        }
+
+        .contact-info p {
+            color: #666;
+
+            line-height: 1.6;
+
+            margin-bottom: 18px;
+        }
+
+        .contact-item {
+            margin-bottom: 25px;
+        }
+
+        .contact-item h3 {
+            color: #061b38;
+
+            margin-bottom: 5px;
+        }
+
+        .contact-form {
+            background-color: #f7f8fa;
+
+            padding: 30px;
+
+            border-radius: 8px;
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact-form h2 {
+            color: #061b38;
+
+            margin-bottom: 25px;
+        }
+
+        .contact-form label {
+            display: block;
+
+            margin-bottom: 7px;
+
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+
+            padding: 13px;
+
+            margin-bottom: 20px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 5px;
+
+            font-size: 15px;
+        }
+
+        .contact-form textarea {
+            height: 130px;
+
+            resize: vertical;
+        }
+
+        .contact-form button {
+            background-color: #fdbd12;
+
+            color: #061b38;
+
+            border: none;
+
+            padding: 13px 25px;
+
+            font-size: 16px;
+
+            font-weight: bold;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #e5a900;
+        }
+
+        footer {
+            background-color: #061b38;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 35px;
+        }
+
+        footer p {
+            color: #aaa;
+
+            margin-top: 10px;
+        }
+
+        @media (max-width: 800px) {
+
+            header {
+                flex-direction: column;
+
+                gap: 20px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+
+                justify-content: center;
+            }
+
+            .contact-section {
+                grid-template-columns: 1fr;
+            }
+
+        }
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<h2>🎓 Bright Future</h2>
+			<p>International School</p>
+		</div>
+
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="about.html">About Us</a>
+			<a href="classes.html">Classes</a>
+			<a href="teachers.html">Teachers</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	</header>
+
+	<section class="contact-hero">
+		<h1>Contact Us</h1>
+		<p>We would love to hear from you</p>
+	</section>
+
+	<main class="contact-section">
+		<div class="contact-info">
+			<h2>Get In touch</h2>
+			<div class="contact-item">
+				<h3>📍 Address</h3>
+				<p>
+					Main Road, Your City,<br>
+                    Pakistan
+				</p>
+			</div>
+			<div class="contact-item">
+				<h3>📞 Phone</h3>
+				<p>
+					+92 300 1234567
+				</p>
+			</div>
+			<div class="contact-item">
+				<h3>✉️ Email</h3>
+				<p>
+					info@brightfuture.com
+				</p>
+			</div>
+			<div class="contact-item">
+				<h3>🕐 School Hours</h3>
+				<p>
+					Monday - Friday<br>
+                    8:00 AM - 2:00 PM
+				</p>
+			</div>
+		</div>
+
+		<div class="contact-form">
+			<h2>Send Us a Message</h2>
+			<form>
+				<label for="name">
+					Your Name
+				</label>
+				<input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+				<label for="subject">
+                    Subject
+                </label>
+
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Enter subject"
+                >
+
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Write your message..."
+                ></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+			</form>
+		</div>
+	</main>
+
+	<footer>
+		<h2>🎓 Bright Future International School</h2>
+
+        <p>
+            © 2026 Bright Future International School.
+            All Rights Reserved.
+        </p>
+	</footer>
+
+</body>
+</html>

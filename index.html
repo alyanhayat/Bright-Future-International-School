@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>School website</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body{
+			font-family: arial, sans-serif;
+			color: #10233f;
+			background-color: white;
+		}
+
+		header{
+			height: 90px;
+			background-color: #061b38;
+			color: white;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0 55px;
+		}
+
+		.logo {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+		}
+
+		.logo-icon {
+			font-size: 40px;
+		}
+
+		.logo h2{
+			color: white;
+			font-size: 25px;
+		}
+		.logo p{
+			color: #fdbd12;
+			font-size: 16px;
+		}
+
+		nav {
+			display: flex;
+			gap: 40px;
+		}
+
+		nav a {
+			color: white;
+			text-decoration: none;
+			font-size: 17px;
+			font-weight: bold;
+		}
+
+		nav a:hover {
+			color: #fdbd12;
+		}
+
+		button {
+			background-color: #fdbd12;
+			color: #061b38;
+			border: none;
+			padding: 14px 25px;
+			font-size: 16px;
+			font-weight: bold;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #e5a900;
+		}
+
+		.hero {
+			min-height: 480px;
+			
+			background: linear-gradient(to right, rgba(3, 24, 50, 0.95), rgba(3, 24, 50, 0.45)), url(school.jpg.jpg);
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			align-items: center;
+			padding: 60px;
+		}
+
+		.hero-text {
+			max-width: 650px;
+			color: white;
+		}
+
+		.welcome {
+			color: #fdbd12;
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 15px;
+		}
+
+		.hero-text h1 {
+			font-size: 48px;
+			line-height: 1.15;
+			margin-bottom: 25px;
+		}
+
+		.description {
+			font-size: 18px;
+			line-height: 1.6;
+			margin-bottom: 30px;
+		}
+
+		.hero-buttons {
+			display: flex;
+			gap: 15px;
+		}
+
+		.hero-buttons a {
+			text-decoration: none;
+		}
+
+		.about-button {
+			background-color: transparent;
+			color: white;
+			border: 2px solid white;
+		}
+
+		.about-button:hover {
+			background-color: white;
+			color: #061b38;
+		}
+
+		.hero-text p {
+			font-size: 18px;
+			line-height: 1.6;
+			margin-bottom: 25px;
+		}
+
+		.hero-text button {
+			margin-right: 15px;
+		}
+
+		.Feature {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			text-align: center;
+			padding: 55px 40px;
+			gap: 20px;
+		}
+
+		.Feature div {
+			padding: 25px 20px;
+			border-right: 1px solid white;
+			transition: 0.3s;
+		}
+
+		.Feature div:last-child {
+			border-right: none;
+		}
+
+		.Feature div:hover {
+			transform: translateY(-15px);
+		}
+
+		.Feature h2 {
+			font-size: 42px;
+			margin-bottom: 18px;
+		}
+
+		.Feature h3 {
+			font-size: 19px;
+			margin-bottom: 12px;
+		}
+
+		.Feature p {
+			color: #666;
+			line-height: 1.5;
+			font-size: 15px;
+		}
+
+		footer {
+			background-color: #061b38;
+			color: white;
+			padding: 50px 60px 20px;
+		}
+
+		.footer-content {
+			display: grid;
+			grid-template-columns: 2fr 1fr 1.5fr;
+			gap: 50px;
+			max-width: 1200px;
+			margin: auto;
+		}
+
+		.footer-column h2 {
+			color: white;
+			margin-bottom: 8px;
+		}
+
+		.footer-column h3 {
+			color: #fdbd12;
+			margin-bottom: 18px;
+		}
+
+		.footer-column p {
+			color: #ddd;
+			line-height: 1.6;
+			margin-bottom: 10px;
+		}
+
+		.footer-column a {
+			display: block;
+			color: #ddd;
+			text-decoration: none;
+			margin-bottom: 12px;
+		}
+
+		.footer-column a:hover {
+			color: #fdbd12;
+		}.footer-bottom {
+			border-top: 1px solid #29405c;
+			text-align: center;
+			margin-top: 40px;
+			padding-top: 20px;
+		}
+
+		.footer-bottom p {
+			color: #aaa;
+		}
+
+		footer h2 {
+			font-size: 25px;
+		}
+
+		footer p {
+			margin-top: 10px;
+			color: #ddd;
+		}
+
+		@media (max-width: 800px) {
+
+			header {
+				height: auto;
+				padding: 25px;
+				flex-direction: column;
+				gap: 20px;
+			}
+
+			nav {
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 20px;
+			}
+
+			.hero {
+				padding: 40px 25px;
+			}
+
+			.hero-text h1 {
+				font-size: 36px;
+			}
+
+			.Feature {
+				grid-template-columns: 1fr;
+			}
+
+			.footer-content {
+				grid-template-columns: 1fr;
+				text-align: center;
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+<header>
+	<div class="logo">
+		<div class="logo-icon">🎓</div>
+		<div>
+			<h2>Bright Future</h2>
+			<p>International School</p>
+		</div>
+	</div>
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="about.html">About Us</a>
+		<a href="classes.html">Classes</a>
+		<a href="teachers.html">Teachers</a>
+		<a href="contact.html">Contact</a>
+	</nav>
+	<button>Enroll Now</button>
+</header>
+<main>
+	<section class="hero">
+		<div class="hero-text">
+			<p class="welcome">WELCOME TO</p>
+			<h1>Bright Future <br>
+			International School</h1>
+			<p class="description">Empowering students with knowledge, values and skills to build a bright future.</p>
+
+			<div class="hero-buttons">
+				<a href="classes.html">
+					<button>Our Classes</button>
+				</a>
+				<a href="about.html">
+					<button class="about-button">About Us</button>
+				</a>
+			</div>
+			
+		</div>
+	</section>
+	<section class="Feature">
+		<div>
+			<h2>📖</h2>
+		    <h3>Quality Education</h3>
+		    <p>We provide high quality education with modern teaching methods.</p>
+		</div>
+		<div>
+			<h2>👨‍🏫</h2>
+			<h3>Experienced Teachers</h3>
+			<p>
+				Our teachers are highly qualified and dedicated to students.
+			</p>
+		</div>
+		<div>
+			<h2>🏆</h2>
+			<h3>Great Facilities</h3>
+			<p>
+				 We have modern classrooms, labs, library and sports facilities.
+			</p>
+		</div>
+		<div>
+			<h2>👨‍👩‍👧‍👦</h2>
+			<h3>Holistic Development</h3>
+			<p>We focus on academic, physical and moral development.</p>
+		</div>
+	</section>
+</main>
+<footer>
+	<div class="footer-content">
+		<div class="footer-column">
+			<h2>Bright Future</h2>
+	        <p>International School</p>
+	        <p>
+	        	Empowering students with knowledge, values and skills for Bright Future.
+	        </p>
+		</div>
+
+		<div class="footer-column">
+			<h3>Quick Links</h3>
+
+			<a href="index.html">Home</a>
+			<a href="about.html">About Us</a>
+			<a href="classes.html">Classes</a>
+			<a href="teachers.html">Teachers</a>
+			<a href="contact.html">Contact</a>
+		</div>
+
+		<div class="footer-column">
+			<h3>Contact Us</h3>
+			<p>📍Main Road, City</p>
+			<p>📞+92 300 1234567</p>
+			<p>✉️info@brightfuture.com</p>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<p>
+		© 2026 Bright Future International School. All Rights Reserved.
+	    </p>
+	</div>
+</footer>
+</body>
+</html>

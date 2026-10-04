@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Teachers - Bright Future International School</title>
+
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: arial, sans-serif;
+			color: #10233f;
+		}
+
+		header {
+			background-color: #061b38;
+			color: white;
+			min-height: 90px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 20px 55px;
+		}
+
+		.logo h2 {
+			color: white;
+		}
+
+		.logo p {
+			color: #fdbd12;
+		}
+
+		nav {
+			display: flex;
+			gap: 35px;
+		}
+
+		nav a {
+			color: white;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		nav a:hover {
+			color: #fdbd12;
+		}
+
+		.teachers-hero {
+			background-color: #061b38;
+			color: white;
+			text-align: center;
+			padding: 70px 20px;
+		}
+
+		.teachers-hero h1 {
+			font-size: 45px;
+			margin-bottom: 15px;
+		}
+
+		.teachers-hero p {
+			color: #ddd;
+			font-size: 18px;
+		}
+
+		.teachers-section {
+			max-width: 1100px;
+			margin: auto;
+			padding: 60px 30px;
+		}
+
+		.teachers-section h2 {
+			text-align: center;
+			color: #061b38;
+			margin-bottom: 40px;
+		}
+
+		.teachers {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 25px;
+		}
+
+		.teacher-card {
+			background-color: white;
+			text-align: center;
+			padding: 30px 20px;
+			border-radius: 8px;
+			box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+			transition: 0.3s;
+		}
+
+		.teacher-card:hover {
+			transform: translateY(-15px);
+		}
+
+		.teacher-image {
+			width: 100px;
+			height: 100px;
+			margin: auto;
+			margin-bottom: 20px;
+			border-radius: 50%;
+			background-color: #061b38;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 45px;
+		}
+
+		.teacher-card h3 {
+			margin-bottom: 8px;
+		}
+
+		.teacher-card .subject {
+			color: #d69e00;
+			font-weight: bold;
+			margin-bottom: 15px;
+		}
+
+		.teacher-card p {
+			color: #666;
+			line-height: 1.5;
+		}
+
+		footer {
+			background-color: #061b38;
+			color: white;
+			text-align: center;
+			padding: 35px;
+		}
+		footer p {
+			color: #aaa;
+			margin-top: 10px;
+		}
+
+		 @media (max-width: 800px) {
+
+            .teachers {
+                grid-template-columns: 1fr;
+            }
+
+            header {
+                flex-direction: column;
+
+                gap: 20px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+
+                justify-content: center;
+            }
+
+	</style>
+
+
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<h2>🎓 Bright Future</h2>
+			<p>International School</p>
+		</div>
+
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="about.html">About Us</a>
+			<a href="classes.html">Classes</a>
+			<a href="teachers.html">Teachers</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	</header>
+
+	<section class="teachers-hero">
+		<h1>Our Teachers</h1>
+		<p>Meet our experienced and dedicated teachers</p>
+	</section>
+
+	<main class="teachers-section">
+		<h2>Meet Our Teachers</h2>
+
+		<div class="teachers">
+			<div class="teacher-card">
+				<div class="teacher-image">👨‍🏫</div>
+				<h3>Mr. Hamza Ali</h3>
+				<p class="subject">Principal</p>
+				<p>
+					 The Principal of Bright Future International School. With many years of experience in education and school management, he leads the school with dedication and works to create a positive learning environment for every student.
+				</p>
+			</div>
+			<div class="teacher-card">
+				<div class="teacher-image">👨‍🏫</div>
+				<h3>Ms. Ayesha</h3>
+				<p class="subject">Head Teacher</p>
+				<p>
+					A highly experienced Senior Teacher who supports students and other teachers. She is dedicated to maintaining high academic standards and helping students achieve their educational goals.
+				</p>
+			</div>
+			<div class="teacher-card">
+				<div class="teacher-image">👨‍🏫</div>
+				<h3>Mr. Saqlain</h3>
+				<p class="subject">Social Studies</p>
+				<p>
+					Enthusiastic social studies teacher who helps students understand history, geography, culture, and society through engaging lessons.
+				</p>
+			</div>
+			<div class="teacher-card">
+				<div class="teacher-image">👨‍🏫</div>
+				<h3>Mr. Mahad</h3>
+				<p class="subject">Biology</p>
+				<p>
+					Passionate biology teacher who makes learning about living organisms and the human body intersting through practical examples.
+				</p>
+			</div>
+			<div class="teacher-card">
+				<div class="teacher-image">👨‍🏫</div>
+				<h3>Mr. Abdullah</h3>
+				<p class="subject">Chemistry</p>
+				<p>
+					Experienced chemistry teacher who explains chemical reactions and scientific concepts through simple and engaging examples.
+				</p>
+			</div>
+			<div class="teacher-card">
+				<div class="teacher-image">👨‍🏫</div>
+				<h3>Mr. Sikander</h3>
+				<p class="subject">Urdu</p>
+				<p>
+					Dedicated Urdu teacher who helps students develop strong reading, writing, grammar, and communication skills
+				</p>
+			</div>
+			<div class="teacher-card">
+				<div class="teacher-image">👨‍🏫</div>
+				<h3>Mr. Sameer</h3>
+				<p class="subject">Arabic</p>
+				<p>
+					Dedicated Arabics teacher who helps students improve their language skills, vocabulary, grammar, and understanding of arabic texts.
+				</p>
+			</div>
+			<div class="teacher-card">
+				<div class="teacher-image">👨‍🏫</div>
+				<h3>Mr. Ahmed</h3>
+				<p class="subject">Mathematics</p>
+				<p>
+					Experienced mathematics teacher
+                    dedicated to helping students
+                    understand difficult concepts.
+				</p>
+			</div>
+			<div class="teacher-card">
+				<div class="teacher-image">👨‍🏫</div>
+				<h3>Ms. Sara</h3>
+				<p class="subject">English</p>
+				<p>
+					Passionate English teacher who
+                    encourages students to improve
+                    their communication skills.
+				</p>
+			</div>
+			<div class="teacher-card">
+				<div class="teacher-image">👨‍🏫</div>
+				<h3>Mr. Ali</h3>
+				<p class="subject">Science</p>
+				<p>
+					Science teacher who makes learning
+                    interesting through experiments
+                    and practical activities.
+				</p>
+			</div>
+			<div class="teacher-card">
+				<div class="teacher-image">👨‍🏫</div>
+				<h3>Ms. Fatima</h3>
+				<p class="subject">Computer Science</p>
+				<p>
+					 Computer science teacher helping
+                    students develop technology skills.
+				</p>
+			</div>
+			<div class="teacher-card">
+				<div class="teacher-image">👨‍🏫</div>
+				<h3>Mr. Hassan</h3>
+				<p class="subject">Physics</p>
+				<p>
+					Physics teacher who explains
+                    scientific concepts using practical
+                    examples.
+				</p>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<h2>🎓 Bright Future International School</h2>
+		<p>
+			© 2026 Bright Future International School.
+            All Rights Reserved.
+		</p>
+	</footer>
+
+</body>
+</html>
